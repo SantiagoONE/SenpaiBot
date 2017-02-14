@@ -1,0 +1,28 @@
+{
+  "name": "senpai",
+  "version": "1.0.0",
+  "description": "Slack bot que provee una lista circular para verificar quien es el siguiente en elegir la próxima pelicula que veremos como team.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "movies",
+    "circular-list",
+    "check"
+  ],
+  "author": "Ricardo Alexis Quiroz Bazan - (https://github.com/SantiagoONE)",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^3.8.1",
+    "botkit": "^0.4.10",
+    "dotenv": "^2.0.0",
+    "lowdb": "^0.15.4"
+  },
+  "repository" :{ 
+    "type" : "git", 
+    "url" : "https://github.com/SantiagoONE/SenpaiBot.git"
+  }
+}
