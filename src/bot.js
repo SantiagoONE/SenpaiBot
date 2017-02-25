@@ -124,7 +124,7 @@ controller.hears(patterns, Config.USE_CASES, (bot, message) => {
                         default: true,
                         callback: (res, convo) => {
                             convo.say("Okay, no problem. You're still the master. :smirk:")
-                            bot.reply(originalMessage, "The master practically say: fak u. :joy:")
+                            bot.reply(originalMessage, "The master practically said: fak u. :joy:")
                             convo.next()
                         }
                     }
