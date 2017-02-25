@@ -110,6 +110,15 @@ controller.hears(patterns, Config.USE_CASES, (bot, message) => {
                 let question = "<@" + user.id + "|" + user.name + "> wants to kill you. :see_no_evil:\nDo you want to proceed?"
                 convo.ask(question, [
                     {
+                        pattern: Config.PATTERN.no,
+                        default: true,
+                        callback: (res, convo) => {
+                            convo.say("Okay, no problem. You're still the master. :smirk:")
+                            bot.reply(originalMessage, "The master practically said: fak u. :joy:")
+                            convo.next()
+                        }
+                    },
+                    {
                         pattern: Config.PATTERN.yes,
                         callback: (res, convo) => {
                             Core.updateNextMaster().then(() => {
@@ -117,15 +126,6 @@ controller.hears(patterns, Config.USE_CASES, (bot, message) => {
                                 bot.reply(originalMessage, "You have a new master. :fire:")
                                 convo.next()
                             })
-                        }
-                    },
-                    {
-                        pattern: Config.PATTERN.no,
-                        default: true,
-                        callback: (res, convo) => {
-                            convo.say("Okay, no problem. You're still the master. :smirk:")
-                            bot.reply(originalMessage, "The master practically said: fak u. :joy:")
-                            convo.next()
                         }
                     }
                 ])
