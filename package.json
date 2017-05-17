@@ -10,10 +10,10 @@
   "author": {
     "email": "saquirozbazan@gmail.com",
     "name": "Ricardo Alexi Quiroz Bazan",
-    "url": "https://github.com/SantiagoONE"
+    "url": "https://github.com/RaqB"
   },
   "bugs": {
-    "url": "https://github.com/SantiagoONE"
+    "url": "https://github.com/RaqB"
   },
   "keywords": [
     "slack",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SantiagoONE/SenpaiBot.git"
+    "url": "https://github.com/RaqB/SenpaiBot.git"
   }
 }
